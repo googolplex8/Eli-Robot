@@ -15,7 +15,7 @@ import edu.wpi.first.wpilibj.command.CommandGroup;
 /**
  * Main class for our 2016 robot, the Unladen Swallow.
  */
-public class MainMotorTest extends NarwhalRobot {
+public class MainMotorTest extends NarwhalRobot{
 	Joystick joystick;
 	Talon leftMotor1, leftMotor2;
 	MotorGroup leftMotors;
@@ -65,7 +65,7 @@ public class MainMotorTest extends NarwhalRobot {
 	@Override
 	protected void constructAutoPrograms(
 			GenericSendableChooser<CommandGroup> autoChooser) {
-
+		autoChooser.addDefault("Auto Program: Log info", new ClassProgram());
 	}
 
 	@Override
